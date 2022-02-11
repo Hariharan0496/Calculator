@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.calculator{
+    background-color:#ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #dfd6d6,
+                  5px 5px 12px grey;
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    
+
+}
+input{
+     grid-column: span 4;
+     border-radius: 30px;
+     margin-top: 40px;
+     margin-bottom: 20px;
+     height: 60px;
+     border: none;
+     box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.096),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.192);
+     color: grey;
+     text-align: end;
+     padding: 20px;
+     font-size: 50px;
+     margin-top: 15px;
+}
+button{
+    border:none;
+    box-shadow: 5px 5px 10px grey,
+                2px -2px 5px grey;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 15px;
+    font-size: 22px;
+    
+}
+.equal{
+    grid-column: span 2;
+    background-color: rgba(0, 128, 0, 0.596);
+    
+}
+.clear_btn{
+    background-color: rgba(255, 0, 0, 0.767);
+    
+}
+.del_btn{
+    background-color: rgba(0, 26, 255, 0.521);
+}
+form{
+    font-size: 20px;
+    padding-left: 112px;
+    padding-top: 15px;
+    color: rgb(15, 12, 12);
+}
+button:hover{
+    background-color: rgb(22, 73, 182);
+    cursor: pointer;
+    color: white;
+}
